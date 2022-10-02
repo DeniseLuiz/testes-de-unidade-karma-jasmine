@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## ----------------------------------------------------- Anotations --------------------------------------------------------
+## -------------------------------------------- Anotations -----------------------------------------------------
 
 # Curso: Alura - Angular: testes automatizados com Jasmine e Karma.
 
@@ -40,11 +40,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - .withContext: permite que, considerando que estejamos testando valores de um array, ao falhar o teste seja indicado em qual contexto (dentro de n possibilidades do array), o teste lançou a exceção.
   \*\*[Referência](https://github.com/DeniseLuiz/testes-de-unidade-karma-jasmine/blob/master/src/app/shared/services/unique-id/unique-id.service.spec.ts): linha 49.
 
-*
-
 - Diferença entre toBeTrue, toBe(true) e toBeTruthy
 
-* toBeTrue: só considera tipos primitivos, ou seja só funciona com:
+<p>toBeTrue: só considera tipos primitivos, ou seja só funciona com:
 
 ```
 expect(true).toBeTrue();
@@ -58,4 +56,4 @@ expect(new Boolean (true)).toBe(new Boolean(true));
 
 falharia, pois as variáveis não apontam para a mesma referência de memória.
 
-- toBeTruthy: tipo de comparação mais genérica de todas, verifica somente se o valor é verdadeiro, sendo assim falharia nos tipos null, undefined e ''.
+- toBeTruthy: tipo de comparação mais genérica de todas, verifica somente se o valor é verdadeiro, sendo assim falharia nos tipos null, undefined e ''.</p>
